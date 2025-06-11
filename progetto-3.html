@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erika Rossi">
+    <meta name="description" content="Case study tecnico della piattaforma Games for Players, con un flusso di vendita via Telegram e un sistema di content automation basato su AI.">
+    <title>Progetto: Games for Players - Portfolio di Erika Rossi</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <meta property="og:title" content="Case Study: Games for Players - Portfolio di Erika Rossi">
+    <meta property="og:description" content="Case study tecnico della piattaforma Games for Players, con un flusso di vendita via Telegram e un sistema di content automation basato su AI.">
+    <meta property="og:image" content="https://NOME-UTENTE-GITHUB.github.io/NOME-REPO/assets/images/progetto-gamesforplayers.png">
+    <meta property="og:url" content="https://NOME-UTENTE-GITHUB.github.io/NOME-REPO/progetto-3.html">
+    <meta property="og:type" content="article">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="Logo Erika Rossi - Torna alla Home"></a>
+                </div>
+                <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
+                <label for="hamburger-toggle" class="hamburger-icon">
+                    <span></span><span></span><span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="progetti.html" class="active">Progetti</a></li>
+                    <li><a href="contattami.html">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <header class="project-detail-header">
+            <div class="container">
+                <p class="project-subtitle">Case Study</p>
+                <h1>Games for Players - E-commerce & Automazione AI</h1>
+            </div>
+        </header>
+
+        <section class="project-detail-section">
+            <div class="container">
+                <div class="project-hero-image">
+                    <img src="assets/images/progetto-gamesforplayers.png" alt="Immagine di copertina del progetto Games for Players">
+                </div>
+                <div class="project-meta">
+                    <div class="row">
+                        <div class="col-md-3"><div class="meta-item"><h4>Cliente</h4><span>Games for Players</span></div></div>
+                        <div class="col-md-3"><div class="meta-item"><h4>Anno</h4><span>2025</span></div></div>
+                        <div class="col-md-3"><div class="meta-item"><h4>Tecnologie</h4><span>WordPress, AI, API, Telegram Bot, PHP</span></div></div>
+                        <div class="col-md-3"><div class="meta-item"><h4>Link</h4><a href="https://www.gamesforplayers.it/" target="_blank">Visita il sito &rarr;</a></div></div>
+                    </div>
+                </div>
+                <div class="project-detail-content">
+                    <h2>Il Contesto</h2>
+                    <p>Games for Players è una piattaforma per la vendita di prodotti digitali per videogiocatori. La richiesta del cliente era duplice: creare un sito che fungesse da catalogo e-commerce, ma con un flusso di vendita non convenzionale, e al contempo generare traffico organico attraverso un blog di notizie costantemente aggiornato.</p>
+                    
+                    <h2>La Sfida</h2>
+                    <p>Le sfide tecniche erano significative e complesse:</p>
+                    <ul>
+                        <li><strong>Funnel di Vendita Custom:</strong> Progettare un'esperienza e-commerce dove l'acquisto non viene finalizzato online, ma l'utente viene reindirizzato su un canale Telegram per una consulenza e un acquisto assistito.</li>
+                        <li><strong>Content Automation con AI:</strong> Sviluppare un sistema automatico per popolare il blog. L'automazione doveva essere in grado di reperire notizie da fonti esterne, riscriverle in ottica SEO tramite intelligenza artificiale e pubblicarle sia sul sito che su un canale Telegram dedicato.</li>
+                        <li><strong>Gestione Eventi:</strong> Integrare una sezione per la pubblicazione e la gestione di eventi periodici organizzati dal cliente.</li>
+                    </ul>
+
+                    <h2>La Soluzione</h2>
+                    <p>Per rispondere a queste esigenze avanzate, ho implementato una soluzione multi-livello basata su WordPress, ma con profonde personalizzazioni:</p>
+                    <ul>
+                        <li><strong>Flusso Telegram-centrico:</strong> Tutti i pulsanti "Acquista" sul sito sono stati trasformati in Call-to-Action che aprono direttamente una chat su Telegram, portando l'utente a un contatto diretto e personale per la vendita.</li>
+                        <li><strong>Motore di Contenuti Automatizzato:</strong> Il fiore all'occhiello del progetto. Ho costruito un'automazione custom che:
+                            <ol>
+                                <li>Monitora un feed RSS di notizie a tema videoludico.</li>
+                                <li>Passa il testo degli articoli a un'API di Intelligenza Artificiale per una riscrittura completa, ottimizzata per i motori di ricerca.</li>
+                                <li>Pubblica il nuovo articolo sul blog WordPress, conservando l'immagine originale della fonte.</li>
+                                <li>Invia automaticamente una notifica con il link al nuovo articolo sul canale Telegram "News", massimizzando la visibilità e l'engagement.</li>
+                            </ol>
+                        </li>
+                        <li><strong>Sezione Eventi Dinamica:</strong> Ho implementato un custom post type in WordPress per permettere al cliente di inserire e gestire facilmente gli eventi futuri e passati in totale autonomia.</li>
+                    </ul>
+                    <p>Il risultato è una macchina digitale che non solo vende prodotti, ma crea e distribuisce autonomamente contenuti di valore, posizionandosi come un punto di riferimento nel suo settore.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Erika Rossi. Tutti i diritti riservati.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/erika-rossi/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/erikarossi95" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

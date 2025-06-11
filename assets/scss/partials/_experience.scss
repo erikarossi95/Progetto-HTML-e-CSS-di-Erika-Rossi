@@ -1,0 +1,65 @@
+// File: _experience.scss (Versione corretta)
+
+.experience-section {
+    padding: 100px 0;
+    background-color: $background-dark;
+}
+
+// Abbiamo rimosso la regola .column che interferiva con Bootstrap
+
+.column h3 { // Abbiamo reso questa regola più specifica
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $border-color;
+    color: $accent-color;
+}
+
+.timeline-item {
+    padding-left: 2rem;
+    border-left: 2px solid $border-color;
+    position: relative;
+    margin-bottom: 2.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -9px;
+        top: 5px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $accent-color;
+        border: 3px solid $background-dark;
+    }
+}
+
+.timeline-item .date {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: $text-secondary;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item .item-title {
+    font-size: 1.2rem;
+    margin: 0 0 5px 0;
+    color: $text-primary;
+}
+
+.timeline-item .institution {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: $text-secondary;
+}
+
+.timeline-item .description {
+    color: $text-secondary;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}

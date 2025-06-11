@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erika Rossi">
+    <meta name="description" content="Hai un progetto in mente o una domanda? Mettiamoci in contatto. Compila il form o trovami sui social per discutere insieme.">
+    <title>Contatti - Erika Rossi</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <meta property="og:title" content="Contattami - Erika Rossi">
+    <meta property="og:description" content="Hai un progetto in mente o una domanda? Mettiamoci in contatto. Compila il form o trovami sui social per discutere insieme.">
+    <meta property="og:image" content="https://NOME-UTENTE-GITHUB.github.io/NOME-REPO/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://NOME-UTENTE-GITHUB.github.io/NOME-REPO/contattami.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contattami - Erika Rossi">
+    <meta name="twitter:description" content="Hai un progetto in mente o una domanda? Mettiamoci in contatto. Compila il form o trovami sui social per discutere insieme.">
+    <meta name="twitter:image" content="https://NOME-UTENTE-GITHUB.github.io/NOME-REPO/assets/images/og-image.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Logo Erika Rossi - Torna alla Home">
+                    </a>
+                </div>
+                <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
+                <label for="hamburger-toggle" class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="progetti.html">Progetti</a></li>
+                    <li><a href="contattami.html" class="active">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <header class="page-header">
+            <div class="container">
+                <h1>Mettiamoci in contatto</h1>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 1rem auto 0 auto;">Hai un progetto in mente o vuoi semplicemente salutarmi? Usa il form qui sotto o trovami sui social.</p>
+            </div>
+        </header>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    
+                    <div class="col-lg-7">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">La tua Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Messaggio</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Invia Messaggio</button>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <aside class="contact-info">
+                            <h3>Contatti Alternativi</h3>
+                            <p>Se preferisci, puoi trovarmi anche su queste piattaforme. Sarò felice di connettermi con te!</p>
+                            <div class="info-item">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/erika-rossi/" target="_blank">Contattami su LinkedIn</a>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-brands fa-github"></i>
+                                <a href="https://github.com/erikarossi95" target="_blank">Cercami su GitHub</a>
+                            </div>
+                        </aside>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Erika Rossi. Tutti i diritti riservati.</p>
+                </div>
+                 <div class="social-links">
+                    <a href="https://www.linkedin.com/in/erika-rossi/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/erikarossi95" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        (function() {
+            
+            emailjs.init({
+              publicKey: "HlEkfY5mTbd8JD0qV",
+            });
+        })();
+
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault(); 
+                
+               
+                const serviceID = "service_ag6wlok";
+                const templateID = "template_cdqfrpd";
+
+                
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        alert('Messaggio inviato con successo!');
+                        document.getElementById('contact-form').reset();
+                    }, (err) => {
+                        alert('Errore nell\'invio del messaggio: ' + JSON.stringify(err));
+                    });
+            });
+        }
+    </script>
+
+</body>
+</html>

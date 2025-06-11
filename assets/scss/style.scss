@@ -1,0 +1,23 @@
+
+// 1. Import delle variabili
+@import 'partials/variabili';
+
+// 2. Import delle regole di base
+@import 'partials/base';
+@import 'partials/logos';
+
+// 3. Import dei componenti riutilizzabili 
+@import 'partials/header';
+@import 'partials/footer';
+
+// 4. Import degli stili specifici 
+@import 'partials/hero';
+@import 'partials/experience';
+@import 'partials/servizi'; 
+@import 'partials/progetti';
+@import 'partials/progetto-singolo';
+@import 'partials/contattami';
+@import 'partials/cta';
+
+// 5. Import delle regole responsive 
+@import 'partials/responsive'; 

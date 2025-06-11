@@ -1,0 +1,56 @@
+
+// Stile generico per le intestazioni delle pagine interne
+.page-header {
+    background-color: $background-light;
+    padding: 4rem 0;
+    text-align: center;
+    border-bottom: 1px solid $border-color;
+
+    h1 {
+        font-size: 3rem;
+        color: $accent-color;
+    }
+}
+
+// Sezione principale della pagina servizi
+.services-page-section {
+    padding: 100px 0;
+}
+
+
+.service-card {
+    background-color: $background-light;
+    border: 1px solid $border-color;
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba($accent-color, 0.1);
+    }
+
+    .service-icon {
+        font-size: 3rem;
+        color: $accent-color;
+        margin-bottom: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: $text-primary;
+    }
+
+    p {
+        color: $text-secondary;
+        line-height: 1.7;
+        flex-grow: 1; 
+    }
+}

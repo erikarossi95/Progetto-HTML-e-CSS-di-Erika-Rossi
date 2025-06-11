@@ -1,0 +1,40 @@
+
+.main-footer {
+    padding: 3rem 0;
+    background-color: $background-light;
+    border-top: 1px solid $border-color;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.copyright p {
+    color: $text-secondary;
+}
+
+.footer-contacts p {
+    margin: 0;
+    color: $text-secondary;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    font-size: 1.5rem; // Icne più grandi
+    color: $text-secondary;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        color: $accent-color;
+        transform: translateY(-3px);
+    }
+}

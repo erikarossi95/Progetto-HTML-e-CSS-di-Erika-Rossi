@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erika Rossi">
+    <meta name="description" content="Case study della piattaforma e-commerce B2B/B2C per Fermento, con form di registrazione custom e logica di visualizzazione differenziata.">
+    <title>Progetto: Fermento - Portfolio di Erika Rossi</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <meta property="og:title" content="Case Study: Fermento - Portfolio di Erika Rossi">
+    <meta property="og:description" content="Case study della piattaforma e-commerce B2B/B2C per Fermento, con form di registrazione custom e logica di visualizzazione differenziata.">
+    <meta property="og:image" content="https://NOME-UTENTE-GITHUB.github.io/NOME-REPO/assets/images/progetto-fermentofam.png">
+    <meta property="og:url" content="https://NOME-UTENTE-GITHUB.github.io/NOME-REPO/progetto-2.html">
+    <meta property="og:type" content="article">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Logo Erika Rossi - Torna alla Home">
+                    </a>
+                </div>
+                <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
+                <label for="hamburger-toggle" class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="progetti.html" class="active">Progetti</a></li>
+                    <li><a href="contattami.html">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <header class="project-detail-header">
+            <div class="container">
+                <p class="project-subtitle">Case Study</p>
+                <h1>Fermento - Piattaforma B2B/B2C</h1>
+            </div>
+        </header>
+
+        <section class="project-detail-section">
+            <div class="container">
+
+                <div class="project-hero-image">
+                    <img src="assets/images/progetto-fermentofam.png" alt="Immagine di copertina del progetto Fermento">
+                </div>
+
+                <div class="project-meta">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="meta-item">
+                                <h4>Cliente</h4>
+                                <span>Fermento</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="meta-item">
+                                <h4>Anno</h4>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                             <div class="meta-item">
+                                <h4>Tecnologie</h4>
+                                <span>WordPress, WooCommerce, CSS3</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="meta-item">
+                                <h4>Link</h4>
+                                <a href="https://www.fermentofam.it/" target="_blank">Visita il sito &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-detail-content">
+                    <h2>Il Contesto</h2>
+                    <p>Fermento è un distributore specializzato in prodotti per panifici, pizzerie e pasticcerie. L'obiettivo era creare una piattaforma digitale unificata in grado di servire due tipologie di clienti molto diverse: i professionisti del settore (B2B) e i clienti privati appassionati (B2C).</p>
+
+                    <h2>La Sfida</h2>
+                    <p>La sfida tecnica principale era implementare un sistema che mostrasse prezzi, prodotti e quantità minime d'ordine differenti a seconda del tipo di utente loggato. Era necessario creare un'area riservata e personalizzata, gestita tramite due percorsi di registrazione separati e custom, garantendo al contempo un'esperienza di navigazione fluida e l'integrazione di un canale di comunicazione diretto come WhatsApp.</p>
+                    
+                    <h2>La Soluzione</h2>
+                    <p>Per realizzare questo progetto, ho sviluppato un sito custom basato su WordPress e WooCommerce, estendendone le funzionalità per soddisfare i requisiti specifici:</p>
+                    <ul>
+                        <li><strong>Form di Registrazione Doppi:</strong> Ho creato due form di registrazione personalizzati. A seconda del form compilato, all'utente viene assegnato un ruolo specifico ("cliente" o "professionista") nel backend del sito.</li>
+                        <li><strong>Logica di Visualizzazione Condizionale:</strong> Ho implementato delle regole per cui, dopo il login, il sito mostra cataloghi, listini prezzi e condizioni di vendita differenti in base al ruolo dell'utente. Questo permette una gestione commerciale mirata per il B2B e il B2C.</li>
+                        <li><strong>Integrazione WhatsApp Business:</strong> È stato integrato un pulsante di chat WhatsApp per fornire un canale di supporto rapido e diretto, particolarmente apprezzato dai clienti professionisti per richieste immediate e ordini.</li>
+                    </ul>
+                    <p>Il risultato è una piattaforma e-commerce flessibile e potente, che permette a Fermento di gestire la sua duplice anima commerciale in modo efficiente e professionale, offrendo a ogni tipo di cliente un'esperienza su misura.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Erika Rossi. Tutti i diritti riservati.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/erika-rossi/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/erikarossi95" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+ </body>
+</html>

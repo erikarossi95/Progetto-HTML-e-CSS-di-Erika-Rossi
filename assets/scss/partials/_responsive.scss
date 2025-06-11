@@ -1,0 +1,110 @@
+
+// Media Query per Tablet (schermi fino a 992px)
+@media (max-width: 992px) {
+    .experience-columns,
+    .contact-layout {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+
+// Media Query per Smartphone (schermi fino a 768px)
+@media (max-width: 768px) {
+    
+    /* --- Layout Generale Mobile --- */
+    .section-title,
+    .page-header h1 {
+        font-size: 2.5rem; 
+    }
+
+    .services-grid-page,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    /* --- Hero Section Mobile --- */
+    .hero-content-home {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* --- Menu Hamburger --- */
+    .hamburger-icon {
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    
+    .hamburger-icon span {
+        width: 100%;
+        height: 3px;
+        background-color: $text-primary;
+        border-radius: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-menu {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        position: fixed; 
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: $background-light;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .nav-menu a {
+        font-size: 1.5rem;
+    }
+    
+    /* --- Logica di Apertura/Chiusura --- */
+    .hamburger-toggle:checked ~ .nav-menu {
+        transform: translateX(0);
+    }
+    
+    // Blocca lo scroll della pagina quando il menu è aperto
+    .hamburger-toggle:checked ~ body {
+        overflow: hidden;
+    }
+    
+    // Animazione dell'icona in una 'X' quando il menu è aperto
+    .hamburger-toggle:checked + .hamburger-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .hamburger-toggle:checked + .hamburger-icon span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger-toggle:checked + .hamburger-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+}

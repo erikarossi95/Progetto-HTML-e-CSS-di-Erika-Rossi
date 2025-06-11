@@ -1,0 +1,91 @@
+
+.project-detail-header {
+    background-color: $background-light;
+    padding: 4rem 0;
+    text-align: center;
+    border-bottom: 1px solid $border-color;
+
+    .project-subtitle {
+        font-size: 1rem;
+        color: $text-secondary;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 0.5rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        color: $accent-color;
+    }
+}
+
+.project-detail-section {
+    padding: 100px 0;
+}
+
+.project-hero-image {
+    margin-bottom: 4rem;
+    
+    img {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid $border-color;
+    }
+}
+
+.project-detail-content {
+    max-width: 800px;
+    margin: 0 auto; // Centra il contenuto testuale
+
+    h2 {
+        font-size: 2rem;
+        color: $accent-color;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $border-color;
+    }
+
+    p, li {
+        color: $text-secondary;
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+    
+    ul {
+        list-style: disc;
+        padding-left: 20px;
+        margin-top: 1rem;
+    }
+
+    a {
+        color: $accent-color;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+}
+
+.project-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: $background-light;
+    border-radius: 10px;
+    border: 1px solid $border-color;
+
+    .meta-item {
+        h4 {
+            color: $text-primary;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        span, a {
+            color: $text-secondary;
+            font-size: 1rem;
+        }
+    }
+}

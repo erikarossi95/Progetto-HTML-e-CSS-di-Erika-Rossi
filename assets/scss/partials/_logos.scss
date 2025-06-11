@@ -1,0 +1,47 @@
+
+.tech-logos-section {
+    padding: 60px 0;
+    background-color: $background-dark;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+}
+
+.logos-grid {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 3.5rem;
+    flex-wrap: wrap; 
+}
+
+.logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 80px;
+    color: $text-primary;
+    transition: all 0.3s ease;
+}
+
+.logo-item i {
+    font-size: 45px; 
+}
+
+.logo-item p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: $text-secondary;
+    transition: color 0.3s ease;
+}
+
+.logo-item:hover {
+    transform: translateY(-5px);
+}
+
+.logo-item:hover i,
+.logo-item:hover p {
+    color: $accent-color;
+}
